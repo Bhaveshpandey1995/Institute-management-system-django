@@ -15,8 +15,9 @@ admin.site.index_title = "Welcome to MMMUT Portal"
 urlpatterns = [
     path('__debug__', include(debug_toolbar.urls)),
     path('admin/', admin.site.urls),
-    path('', dashboard, name='index_view'),
-    path('index', IndexView, name='index'),
+    path('dashbord/', dashboard, name='index_view'),
+    path('', IndexView, name='home'),
+    path('', include('home.urls')),
     path('account/', include('account.urls')),
     path('students/', include('students.urls')),
     path('teachers/', include('teachers.urls')),

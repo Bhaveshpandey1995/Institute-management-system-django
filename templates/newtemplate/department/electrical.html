@@ -1,0 +1,56 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block content %}
+<section class="banner-area relative about-banner" id="home">	
+    <div class="overlay overlay-bg"></div>
+    <div class="container">				
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <!-- <h1 class="text-white">
+                    Course				
+                </h1>	 -->
+                <h1><u>Department</u> <span class="lnr lnr-arrow-right text-white"> Electrical Engineering</span></h1>
+                
+            </div>	
+        </div>
+    </div>
+</section> 
+<div class="container">   
+    <div class="col-lg-12" style="margin-top: 50px;padding: px 0px;text-align: center;">
+<!-- <div class="content">
+    <div class="content_bottom" style="height: 502px"> -->
+        
+      <img src="{% static 'img/Electrical.jpg' %}" style="padding-bottom: 20px" width="100%">
+      <h3 align='left'>Electrical Engineering<u></u> <span class="lnr lnr-arrow-right"> About</span></h3><hr>
+
+        
+<!-- <div class="w_content">
+<h2><u>ELECTRICAL ENGINEERING </u>
+<span class="glyphicon glyphicon-arrow-right"></span>
+ABOUT</h2><hr> -->
+
+<p style="text-align: left; text-align: justify;">
+B.Tech(EE) offered by this department has been accredited by National Board of Accreditation as per Washington Accord.<br><br>
+
+The department of electrical Engineering was established in 1962. This department has over the years established its reputation as an excellent center for importing high quality technical education to under graduates &amp; consultancy to industries and government departments located in the eastern U.P. <br><br>
+
+An M.Tech. course (Power Electronics and Drives) approved by AICTE has been started from the session 2001-2002. The department is also planning to start the aforesaid course on part time basis. It will bridge the gap between the research and the under graduate students. A number of AICTE projects are already in progress. <br><br></p>
+
+
+
+<h3 align='left'>ELECTRICAL ENGINEERING DEPARTMENT</h3>
+<img align='right' class="float-rt" src="{% static 'img/department1.gif' %}">
+<p style="text-align: left; text-align: justify;">
+
+
+The department has a sanctioned strength of 3 Professor, 4 Assist. Professor and 10 Lectures.
+</p><br>
+</div><br>
+
+        <div class="clear">
+        </div>
+    </div>
+</div><br>
+{% endblock %}

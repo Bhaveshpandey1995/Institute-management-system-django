@@ -56,38 +56,38 @@
           </div>
           <nav id="nav-menu-container">
             <ul class="nav-menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
+              <li><a href="{% url 'home' %}">Home</a></li>
+              <li><a href="{% url 'home:about' %}">About</a></li>
                 <!-- <li><a href="courses.html">Courses</a></li> -->
 					    <li class="menu-has-children"><a href="">Academics</a>
 			          <ul>
-                  <li  class="menu-has-children "  ><a href="blog-home.html" >course</a>
+                  <li  class="menu-has-children "  ><a href="blog-home.html" >courses</a>
                     <ul style="left:105%;background:white;width: 150px;">
-                      <li><a href="blog-home.html">U.G.</a></li>
-                      <li><a href="blog-single.html">P.G.</a></li>														
-                      <li><a href="blog-single.html">Ph.D.</a></li>
+                      <li><a href="{% url 'home:ug' %}">U.G.</a></li>
+                      <li><a href="{% url 'home:pg' %}">P.G.</a></li>														
+                      <li><a href="{% url 'home:phd' %}">Ph.D.</a></li>
                     </ul>
                   </li>
                   <li><a href="blog-single.html">Admission</a>
                     <ul style="left:105%;background:white;width: 150px;">
-                      <li><a href="blog-home.html">U.G.</a></li>
-                      <li><a href="blog-single.html">P.G.</a></li>														
-                      <li><a href="blog-single.html">Ph.D.</a></li>
+                      <li><a href="{% url 'home:adug' %}">U.G.</a></li>
+                      <li><a href="{% url 'home:adpg' %}">P.G.</a></li>														
+                      <li><a href="{% url 'home:adphd' %}">Ph.D.</a></li>
                     </ul>
                   </li>														
                   <li><a href="blog-single.html">Departments</a>
                     <ul style="left:105%;background:white;width: 320px;">
-                      <li><a href="blog-home.html">Civil Engineering</a></li>
-                      <li><a href="blog-single.html">Mechanical Engineering</a></li>														
-                      <li><a href="blog-single.html">Electrical Engineering</a></li>
-                      <li><a href="blog-home.html">Electronics & Communication Engineering</a></li>
-                      <li><a href="blog-single.html">Computer Science & Engineering</a></li>														
-                      <li><a href="blog-single.html">Physics & Material Science</a></li>
-                      <li><a href="blog-home.html">Humanities & Management Science</a></li>
-                      <li><a href="blog-single.html">Chemical Engineering</a></li>														
-                      <li><a href="blog-single.html">Information Technology & Computer Application</a></li>
-                      <li><a href="blog-home.html">Chemical & Environmental Science</a></li>
-                      <li><a href="blog-single.html">Mathematics & Scientific Computing</a></li>														
+                      <li><a href="{% url 'home:civil' %}">Civil Engineering</a></li>
+                      <li><a href="{% url 'home:mechanical' %}">Mechanical Engineering</a></li>														
+                      <li><a href="{% url 'home:electrical' %}">Electrical Engineering</a></li>
+                      <li><a href="{% url 'home:electronics' %}">Electronics & Communication Engineering</a></li>
+                      <li><a href="{% url 'home:computer' %}">Computer Science & Engineering</a></li>														
+                      <li><a href="{% url 'home:physics' %}">Physics & Material Science</a></li>
+                      <li><a href="{% url 'home:human' %}">Humanities & Management Science</a></li>
+                      <li><a href="{% url 'home:chemical' %}">Chemical Engineering</a></li>														
+                      <li><a href="{% url 'home:itca' %}">Information Technology & Computer Application</a></li>
+                      <li><a href="{% url 'home:environment' %}">Chemical & Environmental Science</a></li>
+                      <li><a href="{% url 'home:math' %}">Mathematics & Scientific Computing</a></li>														
                       
                     </ul>
                   </li>														
@@ -123,7 +123,21 @@
 					      <li class="menu-has-children"><a href="">Faculty</a>
 			            <ul>
 			              <li><a href="blog-home.html">Login</a></li>
-			              <li><a href="blog-single.html"></a></li>
+                    <li><a href="blog-single.html">Departments</a>
+                      <ul style="left:105%;background:white;width: 320px;">
+                        <li><a href="blog-home.html">Civil Engineering</a></li>
+                        <li><a href="blog-single.html">Mechanical Engineering</a></li>														
+                        <li><a href="blog-single.html">Electrical Engineering</a></li>
+                        <li><a href="blog-home.html">Electronics & Communication Engineering</a></li>
+                        <li><a href="blog-single.html">Computer Science & Engineering</a></li>														
+                        <li><a href="blog-single.html">Physics & Material Science</a></li>
+                        <li><a href="blog-home.html">Humanities & Management Science</a></li>
+                        <li><a href="blog-single.html">Chemical Engineering</a></li>														
+                        <li><a href="blog-single.html">Information Technology & Computer Application</a></li>
+                        <li><a href="blog-home.html">Chemical & Environmental Science</a></li>
+                        <li><a href="blog-single.html">Mathematics & Scientific Computing</a></li>
+                    </li>
+			            </ul>
 			            </ul>
 			          </li>	
 			          <!-- <li><a href="gallery.html">Student</a></li> -->
@@ -133,27 +147,17 @@
 			              <li><a href="blog-single.html">Syllabus</a></li>
 			            </ul>
 			          </li>
-              <li class="menu-has-children"><a href="">Pages</a>
-                <ul>
-                    <li><a href="course-details.html">Course Details</a></li>		
-                    <li><a href="event-details.html">Event Details</a></li>		
-                    <li><a href="elements.html">Elements</a></li>
-                  <li class="menu-has-children"><a href="">Level 2 </a>
-                    <ul>
-                      <li><a href="#">Item One</a></li>
-                      <li><a href="#">Item Two</a></li>
-                    </ul>
-                  </li>					                		
-                </ul>
-              </li>					          					          		          
-              <li><a href="contact.html">Contact</a></li>
+              					          					          		          
+              <li><a href="{% url 'home:contact' %}">Contact</a></li>
+              <li><a href="{% url 'account:login' %}">Login</a></li>
             </ul>
           </nav><!-- #nav-menu-container -->		    		
         </div>
       </div>
     </header><!-- #header -->
-
+    
     <!-- start banner Area -->
+    {% block content %}
     <section class="banner-area relative" id="home">
       <div class="overlay overlay-bg"></div>	
       <div class="container">
@@ -803,6 +807,7 @@
       </div>	
     </section>
     <!-- End cta-two Area -->
+    {% endblock %}
           
     <!-- start footer Area -->		
     <footer class="footer-area section-gap">

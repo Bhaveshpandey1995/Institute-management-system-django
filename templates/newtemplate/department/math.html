@@ -1,0 +1,71 @@
+
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block content %}
+<section class="banner-area relative about-banner" id="home">	
+    <div class="overlay overlay-bg"></div>
+    <div class="container">				
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <!-- <h1 class="text-white">
+                    Course				
+                </h1>	 -->
+                <h1><u>Department</u> <span class="lnr lnr-arrow-right text-white">Mathmectics & Scientific Computing</span></h1>
+                
+            </div>	
+        </div>
+    </div>
+</section>
+
+<!-- <div class="content">
+    <div class="content_bottom" style="height: 502px">
+        <img src="images/Computer.jpg" style="padding-bottom: 20px" width="100%">
+        
+<div class="w_content">
+<h2><u>Information Technology &amp; Computer Application</u>
+<span class="glyphicon glyphicon-arrow-right"></span>
+ABOUT</h2><hr> -->
+<div class="container">   
+    <div class="col-lg-12" style="margin-top: 50px;padding: px 0px;text-align: center;">
+        <img  src="{% static 'img/math.jpg' %}" style="padding-bottom: 20px" width="100%">
+        <h3 align='left'><u style="color: black;">Mathmectics & Scientific Computing</u></h3><hr>
+
+<!-- <div class="content">
+    <div class="content_bottom" style="height: 502px">
+        <img src="img/math.jpg" style="padding-bottom: 20px" width="100%">
+        
+<h2><u style="text-transform:uppercase">Mathematics and Scientific Computing</u></h2><hr> -->
+<p style="text-align: left; text-align: justify;">
+<img src="{% static 'img/msc-dept-image.jpg' %}" width="auto"></p>
+<h3 align='left'>About the Department</h3><br>
+<p style="text-align: left; text-align: justify;">The Department of Mathematics and Scientific Computing attained its present status of an independent department on 22nd June, 2019. Prior to this department was constituent part of Applied Science Department, established in 1962. The department is committed to impart the effective teaching and quality research work in different areas of Mathematics and Scientific Computing.
+</p>
+<h3 align='left'>Courses Offered by the Department:</h3><br>
+<li align='left'>M.Sc. Mathematics (Specialization in Computing)</li>
+<li align='left'>Ph.D. in Mathematics</li>
+<br>
+<p style="text-align: left; text-align: justify;">Besides this, department also offer various courses of Mathematics to Undergraduate and Postgraduate students of different Engineering, Science and management Departments of the university. 
+</p> 
+<br>
+<p style="text-align: left; text-align: justify;">
+The faculty members of the department have expertise across areas of both pure and applied mathematics, such as Modern Algebra, Ring Theory, Operations Research, Inventory Control, Graph Theory, Numerical Analysis, Differential Equations, Special Functions and Mathematical Modelling. They have studied or worked at leading institutions across the India, and their research is published in journals of high international repute. With 10 (01 Professor, 03 Associate Professor, 06 Assistant Professor) sanctioned post of faculty members, the Department is well-placed to offer a variety of courses and activities.
+The ongoing Research Projects of the department are:</p>
+<table border="1" width="95%">
+<tbody><tr><td>S.No.</td><td>Principal Investigator</td><td>Title of Project </td><td>Funding Agency</td><td>Amount (in Lakhs)</td><td>Duration</td></tr>
+<tr><td>1.</td><td>Dr. Harish Chandra</td><td>Study of Derived Length and Nilpotency Class of Group Algebras</td><td>SERB, New Delhi</td><td>05.46</td><td>2017-2020</td></tr>
+<tr><td>2.</td><td>Dr. Amit Kumar Barnwal</td><td>A class of nonlocal doubly singular boundary value problems with Riemann Stieltjes integral type boundary conditions</td><td>DST-SERB, New Delhi</td><td>18.74</td><td>2017-2021</td></tr>
+</tbody></table>
+          
+<p style="text-align: left; text-align: justify;">
+The department has its own state of the art Computational Lab equipped with advanced computing software. The Department also offers facilities for research work leading to Ph.D. degree in different branches of Mathematics and Scientific Computing.
+</p><br>
+<p style="text-align: left; text-align: justify;"><b><i>"Life is good for only two things, discovering mathematics and teaching mathematics.”: Siméon Poisson (1781-1840).</i></b></p>
+
+
+        <div class="clear">
+        </div>
+    </div>
+</div>
+{% endblock %}

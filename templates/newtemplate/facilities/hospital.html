@@ -1,0 +1,52 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block content %}
+<section class="banner-area relative about-banner" id="home">	
+    <div class="overlay overlay-bg"></div>
+    <div class="container">				
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <!-- <h1 class="text-white">
+                    Course				
+                </h1>	 -->
+                <h1><u>Central Facilies</u> <span class="lnr lnr-arrow-right text-white"> Hospital</span></h1>
+                
+            </div>	
+        </div>
+    </div>
+</section> 
+<div class="container">   
+    <div class="col-lg-12" style="margin-top: 50px;padding: px 0px;text-align: center;">
+<!-- <div class="content">
+    <div class="content_bottom" style="height: 502px"> -->
+        
+      <img src="{% static 'img/Physiotherapy.jpg' %}" style="padding-bottom: 20px" width="100%">
+      <h3 align='left'>Central Facilies<u></u> <span class="lnr lnr-arrow-right"> Hospital</span></h3><hr>
+
+<!-- <div class="content">
+    <div class="content_bottom">
+        
+<div class="w_content">
+
+<img src="images/Physiotherapy.jpg" style="padding-bottom: 20px" width="100%"><br>
+<h2><u>CENTRAL FACILITY</u>
+<span class="glyphicon glyphicon-arrow-right"></span>
+HOSPITAL </h2><hr> -->
+
+
+<p style="text-align: left; text-align: justify;">
+The University has a full-fledged Health centre with two  Medical Officers. The Medical Officers and dispensary staff are available round the clock. The timings of the dispensary are notified from time to time. Students are advised to get themselves treated in the University health centre. Serious cases are referred to the Medical College / District Hospital / Local Hospitals. Cases of serious illness and infectious disease must be immediately reported to the warden and Medical Officer. Homeopath services are also available in the University campus. Students applying for medical leave must have a reference from University Medical officers. <br>zz
+Ambulance facility is also available in the University and can be availed by a student/patient on recommendation of the medical officer and/or seriousness of the case by the concerned Hostel Warden.<br><br>
+<a href="{% static 'pdf/DispensaryEvent2016.pdf' %}" target="_blank">List of event organized at University Dispensary</a>
+</p>
+
+</div>
+
+
+        <div class="clear">
+        </div>
+    </div>
+</div>
+{% endblock %}

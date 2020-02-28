@@ -1,0 +1,590 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block content %}
+<section class="banner-area relative about-banner" id="home">	
+    <div class="overlay overlay-bg"></div>
+    <div class="container">				
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <!-- <h1 class="text-white">
+                    Course				
+                </h1>	 -->
+                <h1><u>Central Facilies</u> <span class="lnr lnr-arrow-right text-white"> I.T.R.C.</span></h1>
+                
+            </div>	
+        </div>
+    </div>
+</section> 
+<div class="container">   
+    <div class="col-lg-12" style="margin-top: 50px;padding: px 0px;text-align: center;">
+<!-- <div class="content">
+    <div class="content_bottom" style="height: 502px"> -->
+        
+      <img src="{% static 'img/ITRC.jpg' %}" style="padding-bottom: 20px" width="100%">
+      <h3 align='left'>Central Facilies<u></u> <span class="lnr lnr-arrow-right"> ITRC</span></h3><hr>
+
+<!-- <div class="content">
+    <div class="content_bottom">
+        
+<div class="w_content"> -->
+
+<!-- <img src="images/ITRC.jpg" style="padding-bottom: 20px" width="100%"><br>
+<h2><u>CENTRAL FACILITY</u>
+<span class="glyphicon glyphicon-arrow-right"></span>
+ITRC</h2><hr> -->
+
+<h4 align='left'> Vision</h4><br>
+
+<p style="text-align: left; text-align: justify;">Our vision is to create an state of art intranet which enables the sharing of knowledge base round the clock through wider internet bandwidth.<br>
+<a href="{% static 'pdf/facility.pdf' %}" target="_blank">Download ITRC Facilities</a></p>
+<div class="clear"></div>
+<h4 align='left'>Objectives</h4><br>
+<ul align='left'>
+<li>To provide inter connectivity among different departments and enhance existing facility to access internet worldwide effectively through a 2 Mbps dedicated leased line connectivity.</li>
+<li>To provide central computing facilities to student and staff for their learning, classroom teaching and research needs.</li>
+<li>To strengthen the PG Programme in different departments.</li>
+<li>To conduct short / long term intensive training programme to the working professionals as per industry/ institutions needs.</li>
+<li>To prepare and disseminate the instructional material related to design methodologies (viz. VLSI design, CAD design, Multimedia based design etc.)</li>
+<li>To provide LAN connection to faculty ,cabins faculty residences and hostels to access centralized facility available in the resource center round the clock</li>
+<li>To offer a variety of training programmes on all emerging areas of computing and engineering design.</li>
+<li>To provide specialized design software's to cater the specific needs of different departments. </li>
+</ul><br>
+
+<h4 align='left'>DIVISION OF IT RESOURCE CENTER</h4><br>
+
+<h5 align='left'>DESIGN CENTER:</h5><br>
+<ul align='left'>
+<li>Three clusters; each with 15 nodes &amp; one server.</li>
+<li>ECED &amp; EED (Design Tools of Electronics &amp; Electrical; MATLAB, Embedded system.</li>
+<li>MED &amp; CED (CAD/ CAM )</li>
+<li>CSED (Multimedia &amp; other tools </li>
+</ul><br>
+<h5 align='left'>COMPUTING CENTER:</h5><br>
+<ul align='left'>
+<li>Internet Connectivity: 34 Mbps (1:1) Leased Line,<br>
+                      2 Mbps (1:1) RF link,<br>
+                    10 Mbps broadband connection.</li>
+<li>8 Server (Web, Proxy, Mail, Data-base, Linux &amp; Netware</li>
+<li>200 nodes( intelligent)</li>
+<li>Software</li>
+<li>Printers, Scanners &amp; other accessories</li> 
+</ul><br>
+<h5 align='left'>CAMPUS NETWORKING:</h5><br>
+<ul align='left'>
+<li> Departments</li>
+<li>Library</li>
+<li> Admin Blocks</li>
+<li> Boys Hostel</li>
+<li>Girls Hostel</li>
+<li>Residences </li>
+</ul><br>
+<p style="text-align: left; text-align: justify;">&nbsp;&nbsp;<img src="{% static 'img/itrc3.jpg' %}">&nbsp;&nbsp;<img src="{% static 'img/itrc1.jpg' %}">&nbsp;&nbsp;<img src="{% static 'img/itrc2.jpg' %}"></p> 
+<div class="clear"></div>
+<h4 align='left'>ELEMENTS OF IT-Resource Center</h4>
+<br>
+<h5 align='left'>List of Software:  </h5> <br>
+
+    <table class="content_table" align="left" border="1" bordercolor="#ECF8FF" cellpadding="4" cellspacing="0" width="82%" style="margin-left: 20px">
+      <tbody><tr class="w_trbg"> 
+        <td> 
+          <div align="center"><b><font>S.No.</font></b></div>
+        </td>
+        <td> 
+          <div align="center"><b><font>Name Of 
+            Item</font></b></div>
+
+        </td>
+        <td> 
+          <div align="center"><b><font>Make</font></b></div>
+        </td>
+      </tr>
+      <tr> 
+        <td> 
+          <div align="center">1.</div>
+        </td>
+
+        <td>Microsoft windows 2003 server-enterprise for 50 users</td>
+        <td>MICROSOFT</td>
+      </tr>
+      <tr> 
+        <td> 
+          <div align="center">2.</div>
+        </td>
+        <td>Red Hat Enterprise Linux ES 4.0 Standard Edition</td>
+
+        <td>REDHAT</td>
+      </tr>
+      <tr> 
+        <td> 
+          <div align="center">3.</div>
+        </td>
+        <td>Mail server on Linux</td>
+        <td>MICROSOFT</td>
+
+      </tr>
+      <tr> 
+        <td> 
+          <div align="center">4.</div>
+        </td>
+        <td>Proxy server on Linux</td>
+        <td>-</td>
+      </tr>
+      <tr> 
+        <td> 
+          <div align="center">5.</div>
+
+        </td>
+        <td>Linux ftp Server for Intranet</td>
+        <td>-</td>
+      </tr>
+      <tr> 
+        <td> 
+          <div align="center">6.</div>
+        </td>
+        <td>Oracle 10g Enterprise Edition (50 users)</td>
+
+        <td>ORACLE</td>
+      </tr>
+      <tr> 
+        <td> 
+          <div align="center">7.</div>
+        </td>
+        <td>Oracle Internet Development suit</td>
+        <td>ORACLE</td>
+
+      </tr>
+      <tr> 
+        <td> 
+          <div align="center">8.</div>
+        </td>
+        <td>Visual Studio.Net 2003-professional Edition </td>
+        <td>MICROSOFT</td>
+      </tr>
+
+      <tr> 
+        <td> 
+          <div align="center">9.</div>
+        </td>
+        <td>Symantic Antivirus Corporation Edition for 
+        workstation &amp; Server (50 users)</td>
+        <td>-</td>
+      </tr>
+      <tr> 
+        <td align="center"> 
+          <div align="center"> 10.</div></td>
+
+        <td>Language Compilers in Unix Environment (C,C++,Java)</td>
+        <td>-</td>
+      </tr>
+      <tr> 
+        <td> 
+          <div align="center">11.</div>
+        </td>
+        <td>MSDN</td>
+
+        <td>MICROSOFT</td>
+      </tr>
+    </tbody></table>
+<div class="clear"></div> 
+<br>               
+<h5 align='left'>List Of Node and Server:</h5><br>  
+
+<div class="clear"></div>
+<table class="content_table" align="left" border="1" bordercolor="#ECF8FF" cellpadding="4" cellspacing="0" width="65%" style="margin-left: 20px">
+
+      <tbody><tr class="w_trbg"> 
+        <td width="8%"> 
+          <div align="center"><font><b>S.No.</b></font></div>
+        </td>
+        <td width="33%"> 
+          <div align="center"><font><b>Name of 
+            Item</b></font></div>
+        </td>
+        <td width="22%"> 
+          <div align="center"><font><b>Qty.(Nos.)</b></font></div>
+
+        </td>
+        <td width="37%"> 
+          <div align="center"><font><b>Model No.</b></font></div>
+        </td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">1.</div>
+        </td>
+
+        <td width="33%">Server</td>
+        <td width="22%"> 
+          <div align="center">02</div>
+        </td>
+        <td width="37%">HP Server ML 350G4</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">2.</div>
+
+        </td>
+        <td width="33%">Node</td>
+        <td width="22%"> 
+          <div align="center">50</div>
+        </td>
+        <td width="37%">HP Model DX 6120</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">3.</div>
+
+        </td>
+        <td width="33%">Server </td>
+        <td width="22%"> 
+          <div align="center">02</div>
+        </td>
+        <td width="37%">HP Server ML 370G4</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">4.</div>
+
+        </td>
+        <td width="33%">Server </td>
+        <td width="22%"> 
+          <div align="center">02</div>
+        </td>
+        <td width="37%">HP Server ML 370G4</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">5.</div>
+
+        </td>
+        <td width="33%">Server </td>
+        <td width="22%"> 
+          <div align="center">02</div>
+        </td>
+        <td width="37%">HP Server ML 370G4</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">6.</div>
+
+        </td>
+        <td width="33%">Node (15")</td>
+        <td width="22%"> 
+          <div align="center">30</div>
+        </td>
+        <td width="37%">Hp Dx6120 3.2 GHz</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">7.</div>
+
+        </td>
+        <td width="33%">Node (17")</td>
+        <td width="22%"> 
+          <div align="center">70</div>
+        </td>
+        <td width="37%">Hp Dx6120 3.2 GHz</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">8.</div>
+
+        </td>
+        <td width="33%">Node (TFT)</td>
+        <td width="22%"> 
+          <div align="center">05</div>
+        </td>
+        <td width="37%">Hp Dx6120 3.2 GHz</td>
+      </tr>
+      <tr> 
+        <td width="8%" align="center"> 
+         <div align="center"> 9.</div></td>
+
+        <td width="33%">Work Stations</td>
+        <td width="22%" align="center"> 
+         <div align="center"> 45</div></td>
+        <td width="37%">Hp xw4400 Workstation</td>
+      </tr>
+    </tbody></table>
+<div class="clear"></div>
+<br>
+<h5 align='left'>List of Peripherals: </h5> <br>
+<div class="clear"></div>
+<table class="content_table" align="left" border="1" bordercolor="#ECF8FF" cellpadding="4" cellspacing="0" width="95%" style="margin-left: 20px">
+      <tbody><tr class="w_trbg"> 
+        <td width="8%"> 
+          <div align="center"><font><b>S.No.</b></font></div>
+        </td>
+        <td width="30%"> 
+          <div align="center"><font><b>Name of 
+            Item</b></font></div>
+        </td>
+
+        <td width="8%"> 
+          <div align="center"><font><b>Qty.(Nos.)</b></font></div>
+        </td>
+        <td width="54%"> 
+          <div align="center"><font><b>Make </b></font></div>
+        </td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">1.</div>
+
+        </td>
+        <td width="30%">LCD projector</td>
+        <td width="8%"> 
+          <div align="center">1</div>
+        </td>
+        <td width="54%">HP /AMMC534A0392</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">2.</div>
+
+        </td>
+        <td width="30%">Line Matrix Printer</td>
+        <td width="8%"> 
+          <div align="center">1</div>
+        </td>
+        <td width="54%">L1P1 Model No. T 6312</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">3.</div>
+
+        </td>
+        <td width="30%">Laser Printer</td>
+        <td width="8%"> 
+          <div align="center">1</div>
+        </td>
+        <td width="54%">HP Model Laser Jet 2420 DN Heavy duty</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">4.</div>
+
+        </td>
+        <td width="30%">Laser Printer</td>
+        <td width="8%"> 
+          <div align="center">1</div>
+        </td>
+        <td width="54%">HP Model Laser Jet 1320</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">5.</div>
+
+        </td>
+        <td width="30%">Dot Matrix Printer</td>
+        <td width="8%"> 
+          <div align="center">1</div>
+        </td>
+        <td width="54%">Wipro Model No. Ex 330+</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">6.</div>
+
+        </td>
+        <td width="30%">Scanner</td>
+        <td width="8%"> 
+          <div align="center">1</div>
+        </td>
+        <td width="54%">HP Model No. 3770</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">7.</div>
+
+        </td>
+        <td width="30%">10 KVA Online UPS</td>
+        <td width="8%"> 
+          <div align="center">2</div>
+        </td>
+        <td width="54%">Neo Power Model No. HF 10</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">8.</div>
+
+        </td>
+        <td width="30%">10 KVA Online UPS</td>
+        <td width="8%"> 
+          <div align="center">1</div>
+        </td>
+        <td width="54%">Neo Power Model No. HF 10</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">9.</div>
+
+        </td>
+        <td width="30%">10 KVA Online UPS</td>
+        <td width="8%"> 
+          <div align="center">2</div>
+        </td>
+        <td width="54%">Jyoti-CONSUL205602350205602359</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">10.</div>
+
+        </td>
+        <td width="30%">5 KVA Online UPS</td>
+        <td width="8%"> 
+          <div align="center">1</div>
+        </td>
+        <td width="54%">Jyoti-CONSUL</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">11.</div>
+
+        </td>
+        <td width="30%">750 VA Offline UPS</td>
+        <td width="8%"> 
+          <div align="center">2</div>
+        </td>
+        <td width="54%">Neo Power</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">12.</div>
+
+        </td>
+        <td width="30%">D.G. Set (10KVA) 10KVA DG set</td>
+        <td width="8%"> 
+          <div align="center">1</div>
+        </td>
+        <td width="54%">10 KVA DG set with Kirloskar TAF2 Engine 
+          13.3 BHP at 1500 RPM Engine no. 21.1289/0500317 M/C 
+          no. 04AH559-11</td>
+      </tr>
+    </tbody></table>
+<div class="clear"></div><br>
+<h5 align='left'>Routers, Modems Leased Line etc.:</h5><br>
+<br>
+<div class="clear"></div>
+
+<table class="content_table" align="left" border="1" bordercolor="#ECF8FF" cellpadding="4" cellspacing="0" width="95%" style="margin-left: 20px">
+      <tbody><tr class="w_trbg"> 
+        <td width="8%"> 
+          <div align="center"><font><b>S.No.</b></font></div>
+        </td>
+
+        <td width="58%"> 
+          <div align="center"><font><b>Name of 
+            Item</b></font></div>
+        </td>
+        <td width="11%"> 
+          <div align="center"><font><b>Qty.(Nos.)</b></font></div>
+        </td>
+        <td width="23%"> 
+          <div align="center"><font><b>Make </b></font></div>
+        </td>
+
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">1.</div>
+        </td>
+        <td width="58%">RAD Modem ASMI 52/2W/G.703</td>
+        <td width="11%"> 
+          <div align="center">1</div>
+        </td>
+
+        <td width="23%">MROTEK-512217</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">2.</div>
+        </td>
+        <td width="58%">ASMI 52/M/2W/V.35 RAD Modem</td>
+        <td width="11%"> 
+          <div align="center">1</div>
+
+        </td>
+        <td width="23%">MROTEK</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">3.</div>
+        </td>
+        <td width="58%">CISCO-Power -card-cab-ace</td>
+
+        <td width="11%"> 
+          <div align="center">1</div>
+        </td>
+        <td width="23%">CISCO</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">4.</div>
+        </td>
+
+        <td width="58%">CISCO-Cables-CAB-SS-V35MT</td>
+        <td width="11%"> 
+          <div align="center">2</div>
+        </td>
+        <td width="23%">CISCO</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">5.</div>
+
+        </td>
+        <td width="58%">CISCO-ROUTERS-NETWORK-1760 10/100 Modem 
+          router</td>
+        <td width="11%"> 
+          <div align="center">1</div>
+        </td>
+        <td width="23%">CISCO-FHK094322PQ</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">6.</div>
+
+        </td>
+        <td width="58%">CISCO-ROUTERS-NETWORK-W/C-2T</td>
+        <td width="11%"> 
+          <div align="center">1</div>
+        </td>
+        <td width="23%">CISCO</td>
+      </tr>
+      <tr> 
+        <td width="8%"> 
+          <div align="center">7.</div>
+
+        </td>
+        <td width="58%">2 Mbps leased line internet Connection 
+          at the I.T. Resource Center of University (installation, 
+          Rent per year</td>
+        <td width="11%"> 
+          <div align="center">1</div>
+        </td>
+        <td width="23%">&nbsp;</td>
+      </tr>
+    </tbody></table>
+<div class="clear"></div> <br>
+<h5 align='left'>IT Resource center facility to Library:</h5><br>
+<ul align='left'>
+<li> Sever HP with windows 2000 server</li>
+<li>UPS .75 KVA</li>
+<li> Cable with RJ45 Connector.</li> 
+</ul>
+<div class="clear"></div><br>
+                             
+
+<h4 align='left'>Contact Address : itrc@mmmec.ac.in</h4>
+
+
+</div>
+
+        <div class="clear">
+        </div>
+    </div>
+</div>
+{% endblock %}

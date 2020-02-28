@@ -93,29 +93,30 @@
                   </li>														
                   <li><a href="blog-single.html">Central Facilities</a>
                     <ul style="left:105%;background:white;width: 150px;">
-                      <li><a href="blog-home.html">ITRC</a></li>
-                      <li><a href="blog-single.html">Library</a></li>														
-                      <li><a href="blog-single.html">Hospital</a></li>
-                      <li><a href="blog-home.html">Hostel</a></li>
-                      <li><a href="blog-single.html">Guest House</a></li>														
-                      <li><a href="blog-single.html">Primary School</a></li>
-                      <li><a href="blog-home.html">Post Office</a></li>
-                      <li><a href="blog-single.html">SBI</a></li>														
-                      <li><a href="blog-single.html">Canteen</a></li>
-                      <li><a href="blog-home.html">Transportation</a></li>
+                      <li><a href="{% url 'home:itrc' %}">ITRC</a></li>
+                      <li><a href="{% url 'home:library' %}">Library</a></li>														
+                      <li><a href="{% url 'home:hospital' %}">Hospital</a></li>
+                      <li><a href="{% url 'home:hostel' %}">Hostel</a></li>
+                      <li><a href="{% url 'home:guest' %}">Guest House</a></li>														
+                      <li><a href="{% url 'home:primary' %}">Primary School</a></li>
+                      <li><a href="{% url 'home:post' %}">Post Office</a></li>
+                      <li><a href="{% url 'home:sbi' %}">SBI</a></li>														
+                      <li><a href="{% url 'home:canteen' %}">Canteen</a></li>
+                      <li><a href="{% url 'home:transport' %}">Transportation</a></li>
                     </ul>
-                  </li>														
-						      <li><a href="blog-single.html">Syllabus</a></li>														
+                  </li>		
+                  <li><a href="{% url 'home:fee' %}">Fee Structure</a></li>												
+						      <li><a href="{% url 'home:syllabus' %}">Syllabus</a></li>														
                   <li><a href="blog-single.html">Ordinances</a>
                     <ul style="left:105%;background:white;width: 150px;">
-                      <li><a href="blog-home.html">Ph.D.</a></li>
-                      <li><a href="blog-single.html">M.Sc.</a></li>														
-                      <li><a href="blog-single.html">Ph.D.(Revised)</a></li>
-                      <li><a href="blog-home.html">M.Tech.</a></li>
-                      <li><a href="blog-single.html">M.B.A.</a></li>														
-                      <li><a href="blog-single.html">M.C.A.</a></li>
-                      <li><a href="blog-home.html">B.Tech.</a></li>
-                      <li><a href="blog-single.html">B.B.A.</a></li>	
+                      <li><a href="{% static 'pdf/OrdinancePhD.pdf' %}">Ph.D.</a></li>
+                      <li><a href="{% static 'pdf/M_Sc_final.pdf' %}">M.Sc.</a></li>														
+                      <li><a href="{% static 'pdf/Revised_Ordinance_PhD_2017_18.pdf' %}">Ph.D.(Revised)</a></li>
+                      <li><a href="{% static 'pdf/OrdinanceMTECH.pdf' %}">M.Tech.</a></li>
+                      <li><a href="{% static 'pdf/Syllabi_Centre_for_Management_Studies.pdf' %}">M.B.A.</a></li>														
+                      <li><a href="{% static 'pdf/OrdinanceMCA.pdf' %}">M.C.A.</a></li>
+                      <li><a href="{% static 'pdf/Ordinances_UG.pdf' %}">B.Tech.</a></li>
+                      <li><a href="{% static 'pdf/Ordinances_BBA.pdf' %}">B.B.A.</a></li>	
                     </ul>	
                   </li>											
 			          </ul>
@@ -125,12 +126,12 @@
 			              <li><a href="blog-home.html">Login</a></li>
                     <li><a href="blog-single.html">Departments</a>
                       <ul style="left:105%;background:white;width: 320px;">
-                        <li><a href="blog-home.html">Civil Engineering</a></li>
-                        <li><a href="blog-single.html">Mechanical Engineering</a></li>														
+                        <li><a href="{% url 'home:faccivil' %}">Civil Engineering</a></li>
+                        <li><a href="{% url 'home:facmech' %}">Mechanical Engineering</a></li>														
                         <li><a href="blog-single.html">Electrical Engineering</a></li>
                         <li><a href="blog-home.html">Electronics & Communication Engineering</a></li>
                         <li><a href="blog-single.html">Computer Science & Engineering</a></li>														
-                        <li><a href="blog-single.html">Physics & Material Science</a></li>
+                        <li><a href="{% url 'home:facphy' %}">Physics & Material Science</a></li>
                         <li><a href="blog-home.html">Humanities & Management Science</a></li>
                         <li><a href="blog-single.html">Chemical Engineering</a></li>														
                         <li><a href="blog-single.html">Information Technology & Computer Application</a></li>

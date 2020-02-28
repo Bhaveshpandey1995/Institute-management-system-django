@@ -81,3 +81,65 @@ def EnvironmentView(request):
 def MathView(request):
 
     return render(request, 'newtemplate/department/math.html')
+
+def ItrcView(request):
+
+    return render(request, 'newtemplate/facilities/itrc.html')
+
+def LibraryView(request):
+
+    return render(request, 'newtemplate/facilities/Library.html')
+
+def HospitalView(request):
+
+    return render(request, 'newtemplate/facilities/hospital.html')
+
+def HostelView(request):
+
+    return render(request, 'newtemplate/facilities/hostel.html')
+
+def GuestView(request):
+
+    return render(request, 'newtemplate/facilities/guest.html')
+
+def PrimaryView(request):
+
+    return render(request, 'newtemplate/facilities/primary.html')
+
+def PostView(request):
+
+    return render(request, 'newtemplate/facilities/post.html')
+
+def SbiView(request):
+
+    return render(request, 'newtemplate/facilities/sbi.html')
+
+def CanteenView(request):
+
+    return render(request, 'newtemplate/facilities/canteen.html')
+
+def TransportView(request):
+
+    return render(request, 'newtemplate/facilities/transport.html')
+
+def FeeView(request):
+
+    return render(request, 'newtemplate/feestruc.html')
+
+def SyllabusView(request):
+
+    return render(request, 'newtemplate/syllabus.html')
+
+def FacPhyView(request):
+
+    return render(request, 'newtemplate/faculty/physics.html')
+
+def FacCivilView(request):
+
+    return render(request, 'newtemplate/faculty/civil.html')
+
+def FacMechView(request):
+
+    return render(request, 'newtemplate/faculty/mechanical.html')
+
+

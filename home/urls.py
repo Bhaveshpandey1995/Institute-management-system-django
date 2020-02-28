@@ -1,7 +1,10 @@
 from django.urls import path,include
 from .views import AboutView, ContactView , CoursePhdView , CourseUgView , CoursePgView , AdmissionPhdView , AdmissionPgView , AdmissionUgView , CivilView
 from .views import MechanicalView , ElectricalView , ElectronicsView , ComputerView , PhysicsView , HumanView , ChemicalView
-from .views import ItcaView , EnvironmentView , MathView
+from .views import ItcaView , EnvironmentView , MathView , ItrcView , LibraryView , HospitalView , HostelView
+from .views import GuestView , PrimaryView , PostView , SbiView , CanteenView , TransportView , FeeView , SyllabusView
+from .views import FacPhyView , FacCivilView , FacMechView
+
 
 app_name = 'home'
 
@@ -26,4 +29,19 @@ urlpatterns = [
     path('itca/', ItcaView, name='itca'),
     path('environment/', EnvironmentView, name='environment'),
     path('math/', MathView, name='math'),
+    path('itrc/', ItrcView, name='itrc'),
+    path('library/', LibraryView, name='library'),
+    path('hospital/', HospitalView, name='hospital'),
+    path('hostel/', HostelView, name='hostel'),
+    path('guest/', GuestView, name='guest'),
+    path('primary/', PrimaryView, name='primary'),
+    path('post/', PostView, name='post'),
+    path('sbi/', SbiView, name='sbi'),
+    path('canteen/', CanteenView, name='canteen'),
+    path('transport/', TransportView, name='transport'),
+    path('fee/', FeeView, name='fee'),
+    path('syllabus/', SyllabusView, name='syllabus'),
+    path('facphy/', FacPhyView, name='facphy'),
+    path('faccivil/', FacCivilView, name='faccivil'),
+    path('facmech/', FacMechView, name='facmech'),    
 ]

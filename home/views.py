@@ -138,8 +138,40 @@ def FacCivilView(request):
 
     return render(request, 'newtemplate/faculty/civil.html')
 
+def FacCompView(request):
+
+    return render(request, 'newtemplate/faculty/computer.html')
+
+def FacElecView(request):
+
+    return render(request, 'newtemplate/faculty/electrical.html')
+
+def FacElectroView(request):
+
+    return render(request, 'newtemplate/faculty/electronics.html')
+
 def FacMechView(request):
 
     return render(request, 'newtemplate/faculty/mechanical.html')
+
+def FacHumanView(request):
+
+    return render(request, 'newtemplate/faculty/human.html')
+
+def FacChemView(request):
+
+    return render(request, 'newtemplate/faculty/chemical.html')
+
+def FacItcaView(request):
+
+    return render(request, 'newtemplate/faculty/itca.html')
+
+def FacChemistView(request):
+
+    return render(request, 'newtemplate/faculty/chemistry.html')
+
+def FacMathView(request):
+
+    return render(request, 'newtemplate/faculty/math.html')
 
 

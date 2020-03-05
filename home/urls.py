@@ -3,8 +3,8 @@ from .views import AboutView, ContactView , CoursePhdView , CourseUgView , Cours
 from .views import MechanicalView , ElectricalView , ElectronicsView , ComputerView , PhysicsView , HumanView , ChemicalView
 from .views import ItcaView , EnvironmentView , MathView , ItrcView , LibraryView , HospitalView , HostelView
 from .views import GuestView , PrimaryView , PostView , SbiView , CanteenView , TransportView , FeeView , SyllabusView
-from .views import FacPhyView , FacCivilView , FacMechView
-
+from .views import FacPhyView , FacCivilView , FacCompView , FacElecView , FacElectroView , FacMechView , FacHumanView , FacChemView
+from .views import FacItcaView , FacChemistView , FacMathView
 
 app_name = 'home'
 
@@ -43,5 +43,13 @@ urlpatterns = [
     path('syllabus/', SyllabusView, name='syllabus'),
     path('facphy/', FacPhyView, name='facphy'),
     path('faccivil/', FacCivilView, name='faccivil'),
+    path('faccomp/', FacCompView, name='faccomp'),    
+    path('facelec/', FacElecView, name='facelec'),    
+    path('facelectro/', FacElectroView, name='facelectro'),    
     path('facmech/', FacMechView, name='facmech'),    
+    path('fachuman/', FacHumanView, name='fachuman'),    
+    path('facchem/', FacChemView, name='facchem'),    
+    path('facitca/', FacItcaView, name='facitca'),    
+    path('facchemist/', FacChemistView, name='facchemist'),    
+    path('facmath/', FacMathView, name='facmath'),    
 ]

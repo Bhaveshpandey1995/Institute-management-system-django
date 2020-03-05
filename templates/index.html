@@ -38,12 +38,14 @@
           <div class="row">
             <div class="col-lg-6 col-sm-6 col-8 header-top-left no-padding">
               <ul>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.facebook.com/mmmut.ac.in"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/MMMUTgkp"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/school/madan-mohan-malaviya-university-of-technology/"><i class="fa fa-linkedin-square"></i></a>
+                <a href="https://www.youtube.com/user/mmmut1"><i class="fa fa-youtube-square"></i></a></li>
               </ul>			
             </div>
             <div class="col-lg-6 col-sm-6 col-4 header-top-right no-padding">
-              <a href="tel:+953 012 3654 896"><span class="lnr lnr-phone-handset"></span> <span class="text">+953 012 3654 896</span></a>
-              <a href="mailto:support@colorlib.com"><span class="lnr lnr-envelope"></span> <span class="text">support@colorlib.com</span></a>			
+              <a href="tel:+919235500507"><span class="lnr lnr-phone-handset"></span> <span class="text">+919235500507</span></a>
+              <a href="mailto:patovc@mmmut.ac.in"><span class="lnr lnr-envelope"></span> <span class="text">patovc@mmmut.ac.in</span></a>			
             </div>
           </div>			  					
         </div>
@@ -52,7 +54,7 @@
         <div class="row align-items-center justify-content-between d-flex">
           <div>
             <!-- <a href="index.html"><img src="{% static 'img/logo1.jpg' %}" alt="" title="" /></a> -->
-            <a href="index.html"><p class='nav-menu text-white h2'>MMMUT</p></a>
+            <a href="http://127.0.0.1:8000"><p class='nav-menu text-white h2'>MMMUT</p></a>
           </div>
           <nav id="nav-menu-container">
             <ul class="nav-menu">
@@ -61,21 +63,21 @@
                 <!-- <li><a href="courses.html">Courses</a></li> -->
 					    <li class="menu-has-children"><a href="">Academics</a>
 			          <ul>
-                  <li  class="menu-has-children "  ><a href="blog-home.html" >courses</a>
+                  <li  class="menu-has-children "  ><a href="" >courses</a>
                     <ul style="left:105%;background:white;width: 150px;">
                       <li><a href="{% url 'home:ug' %}">U.G.</a></li>
                       <li><a href="{% url 'home:pg' %}">P.G.</a></li>														
                       <li><a href="{% url 'home:phd' %}">Ph.D.</a></li>
                     </ul>
                   </li>
-                  <li><a href="blog-single.html">Admission</a>
+                  <li><a href="">Admission</a>
                     <ul style="left:105%;background:white;width: 150px;">
                       <li><a href="{% url 'home:adug' %}">U.G.</a></li>
                       <li><a href="{% url 'home:adpg' %}">P.G.</a></li>														
                       <li><a href="{% url 'home:adphd' %}">Ph.D.</a></li>
                     </ul>
                   </li>														
-                  <li><a href="blog-single.html">Departments</a>
+                  <li><a href="">Departments</a>
                     <ul style="left:105%;background:white;width: 320px;">
                       <li><a href="{% url 'home:civil' %}">Civil Engineering</a></li>
                       <li><a href="{% url 'home:mechanical' %}">Mechanical Engineering</a></li>														
@@ -91,7 +93,7 @@
                       
                     </ul>
                   </li>														
-                  <li><a href="blog-single.html">Central Facilities</a>
+                  <li><a href="">Central Facilities</a>
                     <ul style="left:105%;background:white;width: 150px;">
                       <li><a href="{% url 'home:itrc' %}">ITRC</a></li>
                       <li><a href="{% url 'home:library' %}">Library</a></li>														
@@ -107,7 +109,7 @@
                   </li>		
                   <li><a href="{% url 'home:fee' %}">Fee Structure</a></li>												
 						      <li><a href="{% url 'home:syllabus' %}">Syllabus</a></li>														
-                  <li><a href="blog-single.html">Ordinances</a>
+                  <li><a href="">Ordinances</a>
                     <ul style="left:105%;background:white;width: 150px;">
                       <li><a href="{% static 'pdf/OrdinancePhD.pdf' %}">Ph.D.</a></li>
                       <li><a href="{% static 'pdf/M_Sc_final.pdf' %}">M.Sc.</a></li>														
@@ -123,20 +125,20 @@
 					      <!-- <li><a href="events.html">Teacher</a></li> -->
 					      <li class="menu-has-children"><a href="">Faculty</a>
 			            <ul>
-			              <li><a href="blog-home.html">Login</a></li>
-                    <li><a href="blog-single.html">Departments</a>
+			              <li><a href="{% url 'account:login' %}">Login</a></li>
+                    <li><a href="">Departments</a>
                       <ul style="left:105%;background:white;width: 320px;">
                         <li><a href="{% url 'home:faccivil' %}">Civil Engineering</a></li>
                         <li><a href="{% url 'home:facmech' %}">Mechanical Engineering</a></li>														
-                        <li><a href="blog-single.html">Electrical Engineering</a></li>
-                        <li><a href="blog-home.html">Electronics & Communication Engineering</a></li>
-                        <li><a href="blog-single.html">Computer Science & Engineering</a></li>														
+                        <li><a href="{% url 'home:facelec' %}">Electrical Engineering</a></li>
+                        <li><a href="{% url 'home:facelectro' %}">Electronics & Communication Engineering</a></li>
+                        <li><a href="{% url 'home:faccomp' %}">Computer Science & Engineering</a></li>														
                         <li><a href="{% url 'home:facphy' %}">Physics & Material Science</a></li>
-                        <li><a href="blog-home.html">Humanities & Management Science</a></li>
-                        <li><a href="blog-single.html">Chemical Engineering</a></li>														
-                        <li><a href="blog-single.html">Information Technology & Computer Application</a></li>
-                        <li><a href="blog-home.html">Chemical & Environmental Science</a></li>
-                        <li><a href="blog-single.html">Mathematics & Scientific Computing</a></li>
+                        <li><a href="{% url 'home:fachuman' %}">Humanities & Management Science</a></li>
+                        <li><a href="{% url 'home:facchem' %}">Chemical Engineering</a></li>														
+                        <li><a href="{% url 'home:facitca' %}">Information Technology & Computer Application</a></li>
+                        <li><a href="{% url 'home:facchemist' %}">Chemical & Environmental Science</a></li>
+                        <li><a href="{% url 'home:facmath' %}">Mathematics & Scientific Computing</a></li>
                     </li>
 			            </ul>
 			            </ul>
@@ -145,12 +147,12 @@
 			          <li class="menu-has-children"><a href="">Student</a>
 			            <ul>
 			              <li><a href="blog-home.html">Attendance</a></li>
-			              <li><a href="blog-single.html">Syllabus</a></li>
+			              <li><a href="{% url 'home:syllabus' %}">Syllabus</a></li>
 			            </ul>
 			          </li>
               					          					          		          
               <li><a href="{% url 'home:contact' %}">Contact</a></li>
-              <li><a href="{% url 'account:login' %}">Login</a></li>
+              <li><a href="http://127.0.0.1:8000/admin">Login</a></li>
             </ul>
           </nav><!-- #nav-menu-container -->		    		
         </div>
@@ -192,7 +194,7 @@
                   Usage of the Internet is becoming more common due to rapid advancement
                   of technology.
                 </p>
-                <a href="#">Join Now</a>									
+                <a href="https://swayam.gov.in/NPTEL">Join Now</a>									
               </div>
             </div>
           </div>
@@ -244,17 +246,17 @@
               <div class="thumb-wrap relative">
                 <div class="thumb relative">
                   <div class="overlay overlay-bg"></div>	
-                  <img class="img-fluid" src="{% static 'img/p1.jpg' %}" alt="">
+                  <img class="img-fluid" src="{% static 'img/mca.jpg' %}" alt="">
                 </div>
                 <div class="meta d-flex justify-content-between">
-                  <p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
-                  <h4>$150</h4>
+                  <p><span class=""></span> <span class=""></span></p>
+                  <h4></h4>
                 </div>									
               </div>
               <div class="details">
-                <a href="#">
+                <a href="{% url 'home:adpg' %}"><br>
                   <h4>
-                    Learn Designing
+                    Master of Computer Application (M.C.A.)
                   </h4>
                 </a>
                 <p>
@@ -266,17 +268,17 @@
               <div class="thumb-wrap relative">
                 <div class="thumb relative">
                   <div class="overlay overlay-bg"></div>	
-                  <img class="img-fluid" src="{% static 'img/p2.jpg' %}" alt="">
+                  <img class="img-fluid" src="{% static 'img/mtech.jpg' %}" alt="">
                 </div>
                 <div class="meta d-flex justify-content-between">
-                  <p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
-                  <h4>$150</h4>
+                  <p><span class=""></span><span class=""></span></p>
+                  <h4></h4>
                 </div>									
               </div>
               <div class="details">
-                <a href="#">
+                <a href="{% url 'home:adpg' %}"><br>
                   <h4>
-                    Learn React js beginners
+                    Master of Technology (M.Tech.)
                   </h4>
                 </a>
                 <p>
@@ -288,17 +290,17 @@
               <div class="thumb-wrap relative">
                 <div class="thumb relative">
                   <div class="overlay overlay-bg"></div>	
-                  <img class="img-fluid" src="{% static 'img/p3.jpg' %}" alt="">
+                  <img class="img-fluid" src="{% static 'img/mba.jpg' %}" alt="">
                 </div>
                 <div class="meta d-flex justify-content-between">
-                  <p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
-                  <h4>$150</h4>
+                  <p><span class=""></span>  <span class=""></span></p>
+                  <h4></h4>
                 </div>									
               </div>
               <div class="details">
-                <a href="#">
+                <a href="{% url 'home:adpg' %}"><br>
                   <h4>
-                    Learn Photography
+                    Master of Business Administration (M.B.A.)
                   </h4>
                 </a>
                 <p>
@@ -310,17 +312,17 @@
               <div class="thumb-wrap relative">
                 <div class="thumb relative">
                   <div class="overlay overlay-bg"></div>	
-                  <img class="img-fluid" src="{% static 'img/p4.jpg' %}" alt="">
+                  <img class="img-fluid" src="{% static 'img/btech.png' %}" alt="">
                 </div>
                 <div class="meta d-flex justify-content-between">
-                  <p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
-                  <h4>$150</h4>
+                  <p><span class=""></span> <span class=""></span></p>
+                  <h4></h4>
                 </div>									
               </div>
               <div class="details">
-                <a href="#">
+                <a href="{% url 'home:adug' %}"><br>
                   <h4>
-                    Learn Surveying
+                    Bachelor of Technology (B.Tech.)
                   </h4>
                 </a>
                 <p>
@@ -332,17 +334,17 @@
               <div class="thumb-wrap relative">
                 <div class="thumb relative">
                   <div class="overlay overlay-bg"></div>	
-                  <img class="img-fluid" src="{% static 'img/p1.jpg' %}" alt="">
+                  <a href="{% url 'home:adphd' %}"><img class="img-fluid" src="{% static 'img/phd.jfif' %}" alt=""></a>
                 </div>
                 <div class="meta d-flex justify-content-between">
-                  <p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
-                  <h4>$150</h4>
+                  <p><span class=""></span>  <span class=""></span></p>
+                  <h4></h4>
                 </div>									
               </div>
               <div class="details">
-                <a href="#">
-                  <h4>
-                    Learn Designing
+                <a href="{% url 'home:adphd' %}">
+                  <h4><br>
+                    Doctor of Philosophy (Ph.D.)
                   </h4>
                 </a>
                 <p>
@@ -354,17 +356,17 @@
               <div class="thumb-wrap relative">
                 <div class="thumb relative">
                   <div class="overlay overlay-bg"></div>	
-                  <img class="img-fluid" src="{% static 'img/p2.jpg' %}" alt="">
+                  <img class="img-fluid" src="{% static 'img/msc.jpg' %}" alt="">
                 </div>
                 <div class="meta d-flex justify-content-between">
-                  <p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
-                  <h4>$150</h4>
+                  <p><span class=""></span> <span class=""></span></p>
+                  <h4></h4>
                 </div>									
               </div>
               <div class="details">
-                <a href="#">
-                  <h4>
-                    Learn React js beginners
+                <a href="{% url 'home:adpg' %}">
+                  <h4><br>
+                    Master of Science (M.Sc.)
                   </h4>
                 </a>
                 <p>
@@ -376,17 +378,17 @@
               <div class="thumb-wrap relative">
                 <div class="thumb relative">
                   <div class="overlay overlay-bg"></div>	
-                  <img class="img-fluid" src="{% static 'img/p3.jpg' %}" alt="">
+                  <img class="img-fluid" src="{% static 'img/bba.jfif' %}" alt="">
                 </div>
                 <div class="meta d-flex justify-content-between">
-                  <p><span class="lnr lnr-users"></span> 355 <span class="lnr lnr-bubble"></span>35</p>
-                  <h4>$150</h4>
+                  <p><span class=""></span> <span class=""></span></p>
+                  <h4></h4>
                 </div>									
               </div>
               <div class="details">
-                <a href="#">
-                  <h4>
-                    Learn Photography
+                <a href="{% url 'home:adug' %}">
+                  <h4><br>
+                    Bachelor of Business Administration
                   </h4>
                 </a>
                 <p>
@@ -394,7 +396,7 @@
                 </p>
               </div>
             </div>	
-            <div class="single-popular-carusel">
+            <!-- <div class="single-popular-carusel">
               <div class="thumb-wrap relative">
                 <div class="thumb relative">
                   <div class="overlay overlay-bg"></div>	
@@ -415,7 +417,7 @@
                   When television was young, there was a hugely popular show based on the still popular fictional characte										
                 </p>
               </div>
-            </div>							
+            </div>							 -->
           </div>
         </div>
       </div>	
@@ -709,12 +711,13 @@
     
     <!-- Start cta-one Area -->
     <section class="cta-one-area relative section-gap">
+      <div class="overlay overlay-bg"></div>
       <div class="container">
-        <div class="overlay overlay-bg"></div>
-        <div class="row justify-content-center">
+        
+        <div class="row justify-content-center align-items-center">
           <div class="wrap">
-            <h1 class="text-white">Become an instructor</h1>
-            <p>
+            <h1  style="color: white;font-size: 70px;font-weight: 700;">Become an instructor</h1>
+            <p style="color: ;font-size: 14px;font-weight: 600;max-width: 770px;margin: 13px auto;">
               There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting up your own viewing station whether that is on the deck.
             </p>
             <a class="primary-btn wh" href="#">Apply for the post</a>								
@@ -802,7 +805,7 @@
             <h1>Not Yet Satisfied with our Trend?</h1>
           </div>
           <div class="col-lg-4 cta-right">
-            <a class="primary-btn wh" href="#">view our blog</a>
+            <a class="primary-btn wh" href="https://www.facebook.com/mmmut.ac.in">view our blog</a>
           </div>
         </div>
       </div>	
@@ -863,7 +866,7 @@
               <h4>Newsletter</h4>
               <p>Stay update with our latest</p>
               <div class="" id="mc_embed_signup">
-                 <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
+                 <form target="_blank" action="http://127.0.0.1:8000" method="get">
                   <div class="input-group">
                     <input type="text" class="form-control" name="EMAIL" placeholder="Enter Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email Address '" required="" type="email">
                     <div class="input-group-btn">
@@ -880,14 +883,9 @@
         </div>
         <div class="footer-bottom row align-items-center justify-content-between">
           <p class="footer-text m-0 col-lg-6 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          <div class="col-lg-6 col-sm-12 footer-social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-dribbble"></i></a>
-            <a href="#"><i class="fa fa-behance"></i></a>
-          </div>
+          
         </div>						
       </div>
     </footer>	

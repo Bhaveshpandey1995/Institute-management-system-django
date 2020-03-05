@@ -1,13 +1,16 @@
 from django.db import models
 from teachers.models import Teacher
+from django.core.validators import MaxLengthValidator
 
 
 class Department(models.Model):
+    # DEPARTMENT_YEAR = ""
+    # DEPARTMENT_YEAR = generate_year()
     name = models.CharField(max_length=255, unique=True)
     code = models.PositiveIntegerField(blank=True, null=True)
     head = models.ForeignKey(
         Teacher, on_delete=models.CASCADE, blank=True, null=True)
-    establish_date = models.DateField(auto_now_add=True)
+    establish_date = models.CharField(max_length=4)
 
     def dept_code(self):
         if not self.code:
@@ -16,6 +19,16 @@ class Department(models.Model):
 
     def __str__(self):
         return str(self.name)
+
+    def generate_year():
+        collage_first_year = 1962
+        current_year = 2020
+        l = []
+        for i in range(collage_first_year, current_year):
+            t = (str(i), str(i))
+            l = l.append(t)
+        return l
+
 
 
 class AcademicSession(models.Model):

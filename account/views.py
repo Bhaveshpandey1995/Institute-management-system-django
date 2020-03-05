@@ -6,6 +6,7 @@ from django.views.generic import ListView
 from django.contrib.auth.models import User
 from students.models import Student
 from teachers.models import Teacher
+from admin_tools.models import Department
 from .forms import UserRegistrationForm
 
 
@@ -13,9 +14,11 @@ from .forms import UserRegistrationForm
 def dashboard(request):
     total_students = Student.objects.count()
     total_teachers = Teacher.objects.count()
+    total_departments = Department.objects.count()
     context = {
         'total_students': total_students,
         'total_teachers': total_teachers,
+        'total_departments': total_departments,
     }
     return render(request, 'dashboard.html', context)
 

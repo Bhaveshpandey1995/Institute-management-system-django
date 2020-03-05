@@ -163,19 +163,20 @@ MEDIA_URL = '/media/'
 # TODO:USE YOUR OWN EMAIL SETTINGS FILE 
 # for referrence, check the video tutorial link bellow
 # https://www.youtube.com/watch?v=51mmqf5a0Ss
+print(os.environ)
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
-EMAIL_HOST = "email_host"
-EMAIL_PORT = "email_port"
-EMAIL_HOST_USER = "email_host_user"
-EMAIL_HOST_PASSWORD = "email_host_password"
-DEFAULT_FROM_EMAIL = "default_from_email"
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER = os.environ['EMAIL_ADD']
+EMAIL_HOST_PASSWORD = os.environ['EMAIL_PASS']
+DEFAULT_FROM_EMAIL = os.environ['EMAIL_ADD']
 
 # login/register redirects
-LOGIN_REDIRECT_URL = 'index_view'
-LOGOUT_REDIRECT_URL = 'account:login'
-# LOGIN_URL = 'account:login'
-LOGOUT_URL = 'account:logout'
+LOGIN_REDIRECT_URL = 'account:dashboard'
+# LOGOUT_REDIRECT_URL = 'account:login'
+# LOGIN_URL = 'account:dashboard'
+# LOGOUT_URL = 'admin:login'
 
 
 INTERNAL_IPS = ['127.0.0.1', '0.0.0.0' ]

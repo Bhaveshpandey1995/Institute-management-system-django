@@ -30,7 +30,7 @@
             <a href="{% url 'account:dashboard' %}" class="sn-link dash-home">
               <i class="fas fa-tachometer-alt"></i>Dashboard
             </a>
-            <a class="sn-link dash-home" href="http://www.mmmut.ac.in/" >
+            <a class="sn-link dash-home" href="http://127.0.0.1:8000/" >
               <i class="fas fa-globe-asia"></i>Visit Site
             </a>
           </div>
@@ -149,7 +149,7 @@
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">Settings</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="{% url 'account:logout' %}">
+                    <a class="dropdown-item" href="{% url 'account:login' %}">
                       Logout {{ user.username }}
                     </a>
                   </div>
@@ -185,8 +185,8 @@
                   <div class="statbox">
                     <i class="fas fa-users fa-3x"></i>
                     <div class="text">
-                      <p>clubs</p>
-                      <h3>20</h3>
+                      <p>Departments</p>
+                      <h3>{{ total_departments }}</h3>
                     </div>
                   </div>
                   <div class="statbox">

@@ -1,6 +1,7 @@
 from django.urls import path, include
 from . import views
-# from django.contrib.auth.urls import urlpatterns as default_url
+
+from django.contrib.auth.urls import urlpatterns as default_url
 
 
 app_name = 'account'

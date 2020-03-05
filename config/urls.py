@@ -6,6 +6,7 @@ from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
 from account.views import dashboard
 from home.views import *
+from django.contrib.auth import views
 
 
 admin.site.site_header = "MMMUT Admin"
@@ -14,7 +15,9 @@ admin.site.index_title = "Welcome to MMMUT Portal"
 
 urlpatterns = [
     # path('__debug__', include(debug_toolbar.urls)),
+    path('logout/', views.LogoutView.as_view(template_name='registration/login.html')),
     path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls, name='admin'),
     path('dashbord/', dashboard, name='index_view'),
     path('', IndexView, name='home'),
     path('', include('home.urls')),

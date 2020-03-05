@@ -6,8 +6,14 @@ class TeacherForm(ModelForm):
     class Meta:
         model = Teacher
         fields = ['name', 'photo', 'date_of_birth',
-                  'designation', 'expertise',
+                  'designation', 'depart', 'expertise',
                   'mobile', 'email', ]
+        # widgets = {
+        #     "depart": "Department",
+        # }
+        labels = {
+            "depart": "Departments"
+        }
 
 
 class TeacherDesignationForm(ModelForm):

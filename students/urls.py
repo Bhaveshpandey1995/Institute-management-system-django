@@ -1,9 +1,11 @@
 from django.urls import path
 from . import views
+from django.contrib.auth.urls import urlpatterns as default_url
 
 app_name = 'students'
 
 urlpatterns = [
+     
     path('all/', views.students_view, name='all_student'),
     path('add/', views.add_student_view, name='add_student'),
     path('update/<int:pk>/', views.student_update_view.as_view(),

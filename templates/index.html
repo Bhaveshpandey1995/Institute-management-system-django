@@ -144,9 +144,9 @@
 			            </ul>
 			          </li>	
 			          <!-- <li><a href="gallery.html">Student</a></li> -->
-			          <li class="menu-has-children"><a href="">Student</a>
+			          <li class="menu-ha"><a href="">Student</a>
 			            <ul>
-			              <li><a href="blog-home.html">Attendance</a></li>
+			              <li><a href="{% url 'account:student_login' %}">Login</a></li>
 			              <li><a href="{% url 'home:syllabus' %}">Syllabus</a></li>
 			            </ul>
 			          </li>
@@ -246,7 +246,8 @@
               <div class="thumb-wrap relative">
                 <div class="thumb relative">
                   <div class="overlay overlay-bg"></div>	
-                  <img class="img-fluid" src="{% static 'img/mca.jpg' %}" alt="">
+                  <a href="{% url 'home:adpg' %}">
+                  <img class="img-fluid" src="{% static 'img/mca.jpg' %}" alt=""></a>
                 </div>
                 <div class="meta d-flex justify-content-between">
                   <p><span class=""></span> <span class=""></span></p>
@@ -268,7 +269,8 @@
               <div class="thumb-wrap relative">
                 <div class="thumb relative">
                   <div class="overlay overlay-bg"></div>	
-                  <img class="img-fluid" src="{% static 'img/mtech.jpg' %}" alt="">
+                  <a href="{% url 'home:adpg' %}">
+                  <img class="img-fluid" src="{% static 'img/mtech.jpg' %}" alt=""></a>
                 </div>
                 <div class="meta d-flex justify-content-between">
                   <p><span class=""></span><span class=""></span></p>
@@ -290,7 +292,8 @@
               <div class="thumb-wrap relative">
                 <div class="thumb relative">
                   <div class="overlay overlay-bg"></div>	
-                  <img class="img-fluid" src="{% static 'img/mba.jpg' %}" alt="">
+                  <a href="{% url 'home:adpg' %}">
+                  <img class="img-fluid" src="{% static 'img/mba.jpg' %}" alt=""></a>
                 </div>
                 <div class="meta d-flex justify-content-between">
                   <p><span class=""></span>  <span class=""></span></p>
@@ -311,8 +314,9 @@
             <div class="single-popular-carusel">
               <div class="thumb-wrap relative">
                 <div class="thumb relative">
-                  <div class="overlay overlay-bg"></div>	
-                  <img class="img-fluid" src="{% static 'img/btech.png' %}" alt="">
+                  <div class="overlay overlay-bg"></div>
+                  <a href="{% url 'home:adug' %}">
+                  <img class="img-fluid" src="{% static 'img/btech.png' %}" alt=""></a>	
                 </div>
                 <div class="meta d-flex justify-content-between">
                   <p><span class=""></span> <span class=""></span></p>
@@ -356,7 +360,8 @@
               <div class="thumb-wrap relative">
                 <div class="thumb relative">
                   <div class="overlay overlay-bg"></div>	
-                  <img class="img-fluid" src="{% static 'img/msc.jpg' %}" alt="">
+                  <a href="{% url 'home:adpg' %}">
+                  <img class="img-fluid" src="{% static 'img/msc.jpg' %}" alt=""></a>
                 </div>
                 <div class="meta d-flex justify-content-between">
                   <p><span class=""></span> <span class=""></span></p>
@@ -377,8 +382,9 @@
             <div class="single-popular-carusel">
               <div class="thumb-wrap relative">
                 <div class="thumb relative">
-                  <div class="overlay overlay-bg"></div>	
-                  <img class="img-fluid" src="{% static 'img/bba.jfif' %}" alt="">
+                  <div class="overlay overlay-bg"></div>
+                  <a href="{% url 'home:adug' %}">	
+                  <img class="img-fluid" src="{% static 'img/bba.jfif' %}" alt=""></a>
                 </div>
                 <div class="meta d-flex justify-content-between">
                   <p><span class=""></span> <span class=""></span></p>
@@ -497,11 +503,13 @@
                 <img class="img-fluid" src="{% static 'img/e1.jpg' %}" alt="">
               </div>
               <div class="detials col-12 col-md-6">
-                <p>25th February, 2018</p>
-                <a href="#"><h4>The Universe Through
-                A Child S Eyes</h4></a>
+                <p>15th January, 2020</p>
+                <a href="#"><h4>Submission of On-line application form</h4></a>
                 <p>
-                  For most of us, the idea of astronomy is something we directly connect to “stargazing”, telescopes and seeing magnificent displays in the heavens.
+                  	
+16th January, 2020 (10:00 am) to
+
+31st March, 2020 (Till 05:00 pm)
                 </p>
               </div>
             </div>
@@ -510,37 +518,38 @@
                 <img class="img-fluid" src="{% static 'img/e2.jpg' %}" alt="">
               </div>
               <div class="detials col-12 col-md-6">
-                <p>25th February, 2018</p>
-                <a href="#"><h4>The Universe Through
-                A Child S Eyes</h4></a>
+                <p>15th January, 2020</p>
+                <a href="#"><h4>Uploading of admit cards</h4></a>
                 <p>
-                  For most of us, the idea of astronomy is something we directly connect to “stargazing”, telescopes and seeing magnificent displays in the heavens.
+                  30th April, 2020
                 </p>
               </div>
             </div>	
             <div class="single-carusel row align-items-center">
               <div class="col-12 col-md-6 thumb">
-                <img class="img-fluid" src="{% static 'img/e1.jpg' %}" alt="">
+                <img class="img-fluid" src="{% static 'img/e3.jpg' %}" alt="">
               </div>
               <div class="detials col-12 col-md-6">
-                <p>25th February, 2018</p>
-                <a href="#"><h4>The Universe Through
-                A Child S Eyes</h4></a>
+                <p>15th January, 2020</p>
+                <a href="#"><h4>Dates of Malaviya Entrance Test
+
+                  (MET-2020)</h4></a>
                 <p>
-                  For most of us, the idea of astronomy is something we directly connect to “stargazing”, telescopes and seeing magnificent displays in the heavens.
+                  09th  May, 2020 (for UG & PG Programs) and
+
+1stJuly, 2020(for PhD only)
                 </p>
               </div>
             </div>	
             <div class="single-carusel row align-items-center">
               <div class="col-12 col-md-6 thumb">
-                <img class="img-fluid" src="{% static 'img/e1.jpg' %}" alt="">
+                <img class="img-fluid" src="{% static 'img/e4.jpg' %}" alt="">
               </div>
               <div class="detials col-12 col-md-6">
-                <p>25th February, 2018</p>
-                <a href="#"><h4>The Universe Through
-                A Child S Eyes</h4></a>
+                <p>15th January, 2020</p>
+                <a href="#"><h4>Declaration of Result</h4></a>
                 <p>
-                  For most of us, the idea of astronomy is something we directly connect to “stargazing”, telescopes and seeing magnificent displays in the heavens.
+                  First week of June, 2020 (except Ph.D.)
                 </p>
               </div>
             </div>
@@ -741,10 +750,11 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 single-blog">
             <div class="thumb">
-              <img class="img-fluid" src="{% static 'img/b1.jpg' %}" alt="">								
+              <a href="https://www.facebook.com/mmmut.ac.in/photos/a.2290463390972518/3194294237256091/?type=3&theater">
+              <img class="img-fluid" src="{% static 'img/blog1.jpg' %}" alt="">	</a>							
             </div>
-            <p class="meta">25 April, 2018  |  By <a href="#">Mark Wiens</a></p>
-            <a href="blog-single.html">
+            <p class="meta">6 April, 2020  |  By <a href="https://www.facebook.com/mmmut.ac.in">MMMUT BLOGS</a></p>
+            <a href="https://www.facebook.com/mmmut.ac.in/photos/a.2290463390972518/3194294237256091/?type=3&theater">
               <h5>Addiction When Gambling Becomes A Problem</h5>
             </a>
             <p>
@@ -754,10 +764,11 @@
           </div>
           <div class="col-lg-3 col-md-6 single-blog">
             <div class="thumb">
-              <img class="img-fluid" src="{% static 'img/b2.jpg' %}" alt="">								
+              <a href="https://www.facebook.com/mmmut.ac.in/photos/a.765256463493226/3187183421300506/?type=3&theater">
+              <img class="img-fluid" src="{% static 'img/blog2.jpg' %}" alt=""></a>							
             </div>
-            <p class="meta">25 April, 2018  |  By <a href="#">Mark Wiens</a></p>
-            <a href="blog-single.html">
+            <p class="meta">3 March , 2020  |  By <a href="https://www.facebook.com/mmmut.ac.in">MMMUT BLOGS</a></p>
+            <a href="https://www.facebook.com/mmmut.ac.in/photos/a.765256463493226/3187183421300506/?type=3&theater">
               <h5>Computer Hardware Desktops And Notebooks</h5>
             </a>
             <p>
@@ -767,10 +778,11 @@
           </div>
           <div class="col-lg-3 col-md-6 single-blog">
             <div class="thumb">
-              <img class="img-fluid" src="{% static 'img/b3.jpg' %}" alt="">								
+              <a href="https://www.facebook.com/mmmut.ac.in/photos/a.2290463390972518/3186992154652966/?type=3&theater">
+              <img class="img-fluid" src="{% static 'img/blog3.jpg' %}" alt=""></a>							
             </div>
-            <p class="meta">25 April, 2018  |  By <a href="#">Mark Wiens</a></p>
-            <a href="blog-single.html">
+            <p class="meta">1 March, 2020  |  By <a href="https://www.facebook.com/mmmut.ac.in">MMMUT BLOGS</a></p>
+            <a href="https://www.facebook.com/mmmut.ac.in/photos/a.2290463390972518/3186992154652966/?type=3&theater">
               <h5>Make Myspace Your Best Designed Space</h5>
             </a>
             <p>
@@ -780,16 +792,17 @@
           </div>
           <div class="col-lg-3 col-md-6 single-blog">
             <div class="thumb">
-              <img class="img-fluid" src="{% static 'img/b4.jpg' %}" alt="">								
+              <a href="https://www.facebook.com/mmmut.ac.in/photos/a.2290463390972518/3183537701665078/?type=3&theater">
+              <img class="img-fluid" src="{% static 'img/blog4.jpg' %}" alt=""></a>							
             </div>
-            <p class="meta">25 April, 2018  |  By <a href="#">Mark Wiens</a></p>
-            <a href="blog-single.html">
+            <p class="meta">1 March, 2020  |  By <a href="https://www.facebook.com/mmmut.ac.inb">MMMUT BLOGS</a></p>
+            <a href="https://www.facebook.com/mmmut.ac.in/photos/a.2290463390972518/3183537701665078/?type=3&theater">
               <h5>Video Games Playing With Imagination</h5>
             </a>
             <p>
               About 64% of all on-line teens say that do things online that they wouldn’t want their parents to know about.   11% of all adult internet 
             </p>
-            <a href="#" class="details-btn d-flex justify-content-center align-items-center"><span class="details">Details</span><span class="lnr lnr-arrow-right"></span></a>							
+            <a href="https://www.facebook.com/mmmut.ac.in/photos/a.2290463390972518/3183537701665078/?type=3&theater" class="details-btn d-flex justify-content-center align-items-center"><span class="details">Details</span><span class="lnr lnr-arrow-right"></span></a>							
           </div>							
         </div>
       </div>	
@@ -819,12 +832,12 @@
         <div class="row">
           <div class="col-lg-2 col-md-6 col-sm-6">
             <div class="single-footer-widget">
-              <h4>Top Products</h4>
+              <h4>About The Institute</h4>
               <ul>
-                <li><a href="#">Managed Website</a></li>
-                <li><a href="#">Manage Reputation</a></li>
-                <li><a href="#">Power Tools</a></li>
-                <li><a href="#">Marketing Service</a></li>
+                <!-- <li><a href="#"></a></li> -->
+                <li><a href="{% url 'home:about' %}">About Us</a></li>
+                <li><a href="{% url 'home:mission' %}">Mission</a></li>
+                <li><a href="{% url 'home:vision' %}">Vision</a></li>
               </ul>								
             </div>
           </div>
@@ -832,32 +845,33 @@
             <div class="single-footer-widget">
               <h4>Quick links</h4>
               <ul>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Brand Assets</a></li>
-                <li><a href="#">Investor Relations</a></li>
-                <li><a href="#">Terms of Service</a></li>
+                <!-- <li><a href=""></a></li> -->
+                <li><a href="{% url 'home:syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'home:fee' %}">Fee Structure</a></li>
+                <li><a href="#">Virtual Tour</a></li>
               </ul>								
             </div>
           </div>
           <div class="col-lg-2 col-md-6 col-sm-6">
             <div class="single-footer-widget">
-              <h4>Features</h4>
+              <h4>Curricular Activities</h4>
               <ul>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Brand Assets</a></li>
-                <li><a href="#">Investor Relations</a></li>
-                <li><a href="#">Terms of Service</a></li>
+                <!-- <li><a href="#">Jobs</a></li> -->
+                <li><a href="#">Cultural</a></li>
+                <li><a href="#">Sports & Games</a></li>
+                <li><a href="#">NCC/NSS</a></li>
               </ul>								
             </div>
           </div>
           <div class="col-lg-2 col-md-6 col-sm-6">
             <div class="single-footer-widget">
-              <h4>Resources</h4>
+              <h4>Social Media</h4>
               <ul>
-                <li><a href="#">Guides</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">Experts</a></li>
-                <li><a href="#">Agencies</a></li>
+                <ul>
+                  <li><a href="https://www.facebook.com/mmmut.ac.in"><i class="fa fa-facebook-official" aria-hidden="true" style="margin:3px;font-size:22px;"></i></a><a href="https://twitter.com/MMMUTgkp"><i class="fa fa-twitter" style="margin:3px;font-size:22px;"></i></a>
+                    <a href="https://www.linkedin.com/school/madan-mohan-malaviya-university-of-technology/"><i class="fa fa-linkedin-square" style="margin:3px;font-size:22px;"></i></a>
+                    <a href="https://www.youtube.com/user/mmmut1"><i class="fa fa-youtube-square" style="margin:3px;font-size:22px;"></i></a></li>
+                  </ul>		
               </ul>								
             </div>
           </div>																		

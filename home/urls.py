@@ -4,7 +4,7 @@ from .views import MechanicalView , ElectricalView , ElectronicsView , ComputerV
 from .views import ItcaView , EnvironmentView , MathView , ItrcView , LibraryView , HospitalView , HostelView
 from .views import GuestView , PrimaryView , PostView , SbiView , CanteenView , TransportView , FeeView , SyllabusView
 from .views import FacPhyView , FacCivilView , FacCompView , FacElecView , FacElectroView , FacMechView , FacHumanView , FacChemView
-from .views import FacItcaView , FacChemistView , FacMathView
+from .views import FacItcaView , FacChemistView , FacMathView , MissionView , VisionView
 
 app_name = 'home'
 
@@ -52,4 +52,6 @@ urlpatterns = [
     path('facitca/', FacItcaView, name='facitca'),    
     path('facchemist/', FacChemistView, name='facchemist'),    
     path('facmath/', FacMathView, name='facmath'),    
+    path('mission/', MissionView, name='mission'),    
+    path('vission/', VisionView, name='vision'),    
 ]

@@ -174,4 +174,12 @@ def FacMathView(request):
 
     return render(request, 'newtemplate/faculty/math.html')
 
+def MissionView(request):
+
+    return render(request, 'newtemplate/mission.html')
+
+def VisionView(request):
+
+    return render(request, 'newtemplate/vision.html')
+
 

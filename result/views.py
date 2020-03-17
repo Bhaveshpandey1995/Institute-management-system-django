@@ -7,7 +7,7 @@ from admin_tools.models import Semester
 from students.models import Student
 from result.models import Result, Subject
 
-
+@login_required
 def show_result_by_semester(request, student_id, semester):
     student = Student.objects.get(pk=student_id)
     semester = Semester.objects.get(number=semester)

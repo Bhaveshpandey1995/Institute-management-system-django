@@ -20,7 +20,22 @@ def dashboard(request):
         'total_teachers': total_teachers,
         'total_departments': total_departments,
     }
-    return render(request, 'dashboard.html', context)
+    if request.user.is_staff:
+        return render(request, 'dashboard.html', context)
+    return render(request, 'studentdashboard.html', context)
+    
+# @login_required
+# def studentdashboard(request):
+#     print("hello")
+#     total_students = Student.objects.count()
+#     total_teachers = Teacher.objects.count()
+#     total_departments = Department.objects.count()
+#     context = {
+#         'total_students': total_students,
+#         'total_teachers': total_teachers,
+#         'total_departments': total_departments,
+#     }
+#     return render(request, 'studentdashboard.html', context)
 
 
 def register(request):
@@ -30,6 +45,7 @@ def register(request):
             new_user = user_form.save(commit=False)
             new_user.set_password(
                 user_form.cleaned_data['password'])
+            # if request.POST.get('faculty') 
             new_user.save()
             auth_user = authenticate(username=user_form.cleaned_data['username'],
                                      password=user_form.cleaned_data['password'])

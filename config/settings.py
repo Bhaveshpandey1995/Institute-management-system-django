@@ -163,7 +163,7 @@ MEDIA_URL = '/media/'
 # TODO:USE YOUR OWN EMAIL SETTINGS FILE 
 # for referrence, check the video tutorial link bellow
 # https://www.youtube.com/watch?v=51mmqf5a0Ss
-print(os.environ)
+# print(os.environ)
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'

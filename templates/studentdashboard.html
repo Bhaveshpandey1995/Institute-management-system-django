@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Faculty DashBoard</title>
+  <title>Student DashBoard</title>
   <!-- FONT AWESOME KIT -->
   <script src="https://kit.fontawesome.com/16475baae0.js" crossorigin="anonymous"></script>
   <!-- GOOGLE FONT -->
@@ -24,7 +24,7 @@
         <div class="col-12 col-sm-12 col-md-4 col-lg-2 sidenav">
           <div class="logo">
             <!-- <img src="{% static 'images/logo.png' %}" alt="">-->
-            <h4>Faculty
+            <h4>Student
                DashBoard</h4>
           </div>
           <div class="sn-group">
@@ -35,18 +35,18 @@
               <i class="fas fa-globe-asia"></i>Visit Site
             </a>
           </div>
-          <div class="sn-group">
+          <!-- <div class="sn-group">
             <h5>import</h5>
             <nav>
               <a class="sn-link" href="{% url 'result:import_subject_csv' %}">
                 <i class="fas fa-book"></i>subjects from csv
               </a>
             </nav>
-          </div>
+          </div> -->
           <div class="sn-group">
-            <h5>student</h5>
+            <!-- <h5>student</h5> -->
             <nav>
-              <a class="sn-link" href="{% url 'students:add_student' %}">
+              <!-- <a class="sn-link" href="{% url 'students:add_student' %}">
                 <i class="fas fa-user-plus"></i>admission
               </a>
               <a href="" class="sn-link">
@@ -54,13 +54,13 @@
               </a>
               <a href="{% url 'students:all_student' %}" class="sn-link">
                 <i class="fas fa-th-list"></i>all student
-              </a>
+              </a> -->
               <a href="{% url 'students:result' %}" class="sn-link">
                 <i class="fas fa-poll"></i>result
               </a>
             </nav>
           </div>
-          <div class="sn-group">
+          <!-- <div class="sn-group">
             <h5>teacher</h5>
             <nav>
               <a class="sn-link" href="{% url 'teachers:add_teacher' %}">
@@ -75,28 +75,28 @@
                 <i class="fas fa-th-list"></i>designation
               </a>
             </nav>
-          </div>
+          </div> -->
           <div class="sn-group">
-            <h5>Course</h5>
+            <!-- <h5>Course</h5> -->
             <nav>
-              <a class="sn-link" href="{% url 'course:course-list' %}">
+              <!-- <a class="sn-link" href="{% url 'course:course-list' %}">
                 <i class="fas fa-user-tie"></i>Course
               </a>
               <a class="sn-link" href="{% url 'course:section-list' %}">
                 <i class="fas fa-user-tie"></i>Section
-              </a>
+              </a> -->
               <a class="sn-link" href="{% url 'course:course-attendance-list' %}">
                 <i class="fas fa-user-tie"></i>Attendance
               </a>
-              <a class="sn-link" href="{% url 'course:course-assign-to-teacher-list' %}">
+              <!-- <a class="sn-link" href="{% url 'course:course-assign-to-teacher-list' %}">
                   <i class="fas fa-user-tie"></i>Course assign to teacher
               </a>
               <a class="sn-link" href="{% url 'course:course-assign-to-student-list' %}">
                   <i class="fas fa-user-tie"></i>Course assign to student
-              </a>
+              </a> -->
             </nav>
           </div>
-          <div class="sn-group">
+          <!-- <div class="sn-group">
             <h5>departments</h5>
             <nav>
               <a class="sn-link" href="{% url 'admin_tools:departments' %}">
@@ -114,8 +114,8 @@
                 <i class="fas fa-plus"></i>semesters
               </a>
             </nav>
-          </div>
-          <div class="sn-group">
+          </div> -->
+          <!-- <div class="sn-group">
             <h5>admin options</h5>
             <nav>
               <a href="{% url 'admin_tools:add_user' %}" class="sn-link">
@@ -125,7 +125,7 @@
                 <i class="fas fa-plus"></i>all users
               </a>
             </nav>
-          </div>
+          </div> -->
         </div>
         <!-- END OF SIDENAV -->
 
@@ -150,7 +150,7 @@
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">Settings</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="{% url 'account:login' %}">
+                    <a class="dropdown-item" href="{% url 'account:student_login' %}">
                       Logout {{ user.username }}
                     </a>
                   </div>

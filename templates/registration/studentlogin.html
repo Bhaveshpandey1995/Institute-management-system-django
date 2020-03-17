@@ -16,7 +16,7 @@
                     <div class="container">
                         <div class="row justify-content-center py-5">
                             <div class="col-6">
-                                <h1 class="text-center" style="color: white;">Faculty Login</h1>
+                                <h1 class="text-center" style="color: white;">Student Login</h1>
                                 <form method="POST">
                                     {% csrf_token %}
                                     <div class="form-group">
@@ -30,15 +30,13 @@
                                             placeholder="password">
                                     </div>
                                     <input type="hidden" name="next" value="{{ next }}">
-                                    <!-- <input type="hidden" name="nex" value="is_staff"> -->
-
                                     <button type="submit" class="btn btn-outline-info float-right">Login</button>
                                 </form>
-                                <a class="d-block" href="{% url 'account:register'  %}">
+                                <!-- <a class="d-block" href="{% url 'account:register'  %}">
                                     Don't have an account? <b>Register Now.</b>
                                 </a>
                                 <a class="d-block" href="/password-reset/">
-                                    Forgot password?
+                                    Forgot password? -->
                                 </a>
                             </div>
                         </div>
